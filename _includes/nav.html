@@ -1,0 +1,37 @@
+<!-- Navigation -->
+<nav class="nav-wrap" id="nav">
+  <div class="container-fluid" id="nav-stripe"></div>
+  <div class="container" id="nav-content">
+    <a href="{{ site.baseurl }}/" class="nav-logo"
+      ><img class="img-fluid" src="{{ site.baseurl }}/assets/img/logo_white.png"
+    /></a>
+    <ul class="navigation">
+      {% if page.url != "/" %}
+      <li>
+        <a href="{{ site.baseurl }}/">
+          Strona Główna
+        </a>
+      </li>
+      {% endif %} {% if page.url != "/pracownia/" %}
+      <li>
+        <a href="{{ site.baseurl }}/pracownia">
+          O Pracowni
+        </a>
+      </li>
+      {% endif %} {% if page.url != "/oferta/" %}
+      <li>
+        <a href="{{ site.baseurl }}/oferta">
+          Oferta
+        </a>
+      </li>
+      {% endif %} {% if page.url != "/kontakt/" %}
+      <li>
+        <a href="{{ site.baseurl }}/kontakt">
+          Kontakt
+        </a>
+      </li>
+      {% endif %}
+    </ul>
+  </div>
+  <div class="lace"></div>
+</nav>

@@ -1,0 +1,118 @@
+---
+layout: default
+---
+
+<!-- Header -->
+<header class="header-main">
+  <div class="overlay-light"></div>
+  {% include nav.html %}
+  <div class="home-title">
+    <h1 class="wow slideInRight">
+      {{ site.title }}
+    </h1>
+    <h4>
+      Słodko Się Robi
+    </h4>
+  </div>
+</header>
+
+<!-- Content -->
+<div class="container" id="content">
+  <!-- About -->
+  <div class="about">
+    <div class="row">
+      <div class="col-md-6 wow fadeIn slow">
+        <h2>
+          Kim jest AleBabka?
+        </h2>
+        <p>
+          Jesteśmy niedawno otwartą pracownią, która oferuje wszelkiego rodzaju
+          wyroby cukiernicze. Dostosowujemy się do wymagań i potrzeb naszych
+          klientów jednocześnie dbając o jakość naszych słodkości. Nasza
+          pracownia znajduje się w województwie Warmińsko-Mazurskim, okolice
+          Bartoszyc. Jeśli masz jakieś pytania przejrzyj szczegóły zawarte na
+          naszej stronie internetowej lub skontaktuj się z nami już teraz!
+        </p>
+        <button type="button" class="btn btn-outline-secondary">
+          <a href="{{ site.baseurl }}/pracownia">Dowiedz się więcej</a>
+        </button>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid about-photo wow pulse" src="{{ site.baseurl }}/assets/img/about.jpg" />
+      </div>
+    </div>
+  </div>
+  <hr class="divider" />
+  <div class="offer">
+    <div class="offer-text wow slideInRight">
+      <div class="row">
+        <div class="col-md-3">
+          <img class="img-fluid" src="assets/img/cookie.png" />
+        </div>
+        <div class="col-md-6">
+          <h2>Oferta</h2>
+          <p>
+            Zamów u nas! Jeśli interesuje Cię zamówienie tortu, ciasta, czy
+            babeczki to dobrze, że jesteś! Może szukasz słodkiego stołu? Przejdź
+            do naszej oferty i znajdź, to czego szukasz. Jeśli chcesz dowiedzieć
+            się więcej o naszej ofercie przejdź do zakładki kontakt i zadzwoń
+            lub napisz do nas.
+          </p>
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="assets/img/cake.png" />
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-secondary">
+        <a href="{{ site.baseurl }}/oferta">Przejdź do naszej oferty</a>
+    </button>
+  </div>
+  <hr class="divider" />
+  <div class="contact">
+    <div class="row">
+      <div class="col-md-6">
+        <iframe class="map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.132648490138!2d20.812671315841175!3d54.230840980173895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e2574101382455%3A0x4b2832666d7029ce!2zUG_FgsSZY3plIDUyLCAxMS0yMDAgUG_FgsSZY3pl!5e0!3m2!1spl!2spl!4v1551804067949"
+          frameborder="2"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="col-md-6 contact-row">
+        <h2>Kontakt</h2>
+        <p>Masz pytania? Skontaktuj się z nami już dziś! Zapraszamy do naszej nowo
+        otwartej pracowni, której adres znajduje się na mapie. Zapraszamy
+        również do kontaktu poprzez media społecznościowe lub kontakt
+        telefoniczny.</p>
+        <div class="row">
+          <button class="col-md-3 icon wow tada" type="button">
+              <a href="https://www.facebook.com/AleBabka-Pracownia-Cukiernicza-Bartoszyce-2097772840523601/" target="_blank" rel="noopener noreferrer">
+            <div><i class="fab fa-facebook"></i></div>
+            <p>Napisz do nas na Facebook'u</p>
+          </a>
+          </button>
+          
+          <button  class="col-md-3 icon wow tada" type="button">
+            <a href="https://www.instagram.com/pracowniacukiernicza/?fbclid=IwAR0VwtffIMJfzsL_mJPKUrYjWVZesvpIEv1MfRgXTEtmqliayddvrNzaQbY" target="_blank" rel="noopener noreferrer">            <div><i class="fab fa-instagram"></i></div>
+            <p>Znajdź nas na Instagramie</p>
+            </a>
+          </button>
+          <button  class="col-md-3 icon wow tada" type="button">
+            <a href="mailto:kontakt@alebabka.com">
+            <div><i class="fas fa-envelope"></i></div>
+            <p>Skontaktuj się poprzez e-mail</p>
+          </a>
+          </button >
+          <button  class="col-md-3 icon wow tada" type="button">
+            <a href="tel:+48506080884">
+            <div><i class="fas fa-phone"></i></div>
+            <p>Zadzwoń do nas</p>
+          </a>
+          </div>
+        </button>
+        <button type="button"class="btn btn-outline-secondary"><a href="{{ site.baseurl }}/kontakt">Przejdź do danych kontaktowych</a></button>
+    </div>
+  </div>
+  </div>
+</div>
+{% include footer.html %}

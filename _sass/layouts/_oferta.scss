@@ -1,0 +1,193 @@
+.header-offer {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  background: url("../img/offer.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  .overlay-light {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba($primary-color, 0.6);
+  }
+  .home-title {
+    h1 {
+      color: $second-color;
+      font-weight: 900;
+    }
+    h4 {
+      color: $second-color;
+    }
+    z-index: 3;
+    @media only screen and (max-width: 640px) {
+      padding: 0;
+      text-align: center;
+    }
+  }
+}
+.offer-description {
+  text-align: center;
+  padding: 100px 200px 100px 200px;
+  position: relative;
+  @media only screen and (max-width: 1000px) {
+    padding: 100px 0px 100px 0px;
+  }
+  .offer-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px 15px 0px 0px;
+    background: $primary-color;
+    h1 {
+      color: white;
+    }
+    img {
+      max-height: 100px;
+    }
+  }
+  .offer-text {
+    background: url("../img/offer1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 50px;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    z-index: 0;
+    .overlay-text {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba($second-color, 0.7);
+      border-radius: 0 0 15px 15px;
+    }
+    .offer-about {
+      position: relative;
+      z-index: 1;
+      p {
+        font-weight: 600;
+        margin-bottom: 20px;
+        letter-spacing: 1.5px;
+      }
+      h5 {
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      h3 {
+        color: $primary-color;
+      }
+      a {
+        font-size: 2em;
+        color: $primary-color;
+      }
+      a:hover {
+        color: rgba($primary-color, 0.6);
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+.offer-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  .offer-card {
+    background: lighten($primary-color, 40%);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: -15px 10px 30px -8px #cfa9df;
+  }
+  h5 {
+    margin-bottom: 20px;
+  }
+  .text-description {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 1em;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .slodki {
+    .offer-card {
+      h2 {
+        margin-bottom: 30px !important;
+      }
+      .slodki-images {
+        margin: 20px 0 20px 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        img {
+          height: 200px;
+          border-radius: 15px;
+          border: 2px solid $primary-color;
+          @media only screen and (max-width: 1200px) {
+            height: 150px;
+          }
+        }
+      }
+    }
+  }
+  .row {
+    padding: 0px 15px 0px 15px;
+  }
+  .opis {
+    margin-top: 30px;
+    border-width: 3px;
+    border-color: $primary-color;
+    border-style: solid;
+    background: $second-color;
+
+    .nazwa-opis {
+      color: $primary-color;
+      font-size: 1.1em;
+      font-weight: 800;
+    }
+    h3 {
+      background: $primary-color;
+      border-radius: 15px;
+      color: $second-color;
+      margin-top: -20px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-align: left;
+    }
+    li {
+      width: 100%;
+      font-weight: 600;
+
+      margin: 2px 2px 2px 0;
+    }
+    li::before {
+      content: "•";
+      color: $primary-color;
+      margin-right: 5px;
+    }
+  }
+}
