@@ -102,10 +102,6 @@ $("#btn-torty").on("click", function() {
         thumb: "../assets/img/torty/6.jpg"
       },
       {
-        src: "../assets/img/torty/7.jpg",
-        thumb: "../assets/img/torty/7.jpg"
-      },
-      {
         src: "../assets/img/torty/8.jpg",
         thumb: "../assets/img/torty/8.jpg"
       },
