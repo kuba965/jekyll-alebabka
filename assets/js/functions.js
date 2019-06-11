@@ -78,10 +78,6 @@ $("#btn-torty").on("click", function() {
     dynamic: true,
     dynamicEl: [
       {
-        src: "../assets/img/torty/1.jpg",
-        thumb: "../assets/img/torty/1.jpg"
-      },
-      {
         src: "../assets/img/torty/2.jpg",
         thumb: "../assets/img/torty/2.jpg"
       },

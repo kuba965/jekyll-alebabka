@@ -3,30 +3,30 @@
   <div class="container-fluid" id="nav-stripe"></div>
   <div class="container" id="nav-content">
     <a href="index.html" class="nav-logo"
-      ><img class="img-fluid" src="assets/img/logo_white.png"
+      ><img class="img-fluid" src="{{ site.baseurl }}/assets/img/logo_white.png"
     /></a>
     <ul class="navigation">
       {% if page.url != "/" %}
       <li>
-        <a href="index.html">
+        <a href="{{ site.baseurl }}/">
           Strona Główna
         </a>
       </li>
-      {% endif %} {% if page.url != "/pracownia.html" %}
+      {% endif %} {% if page.url != "/pracownia/" %}
       <li>
-        <a href="pracownia.html">
+        <a href="{{ site.baseurl }}/pracownia/">
           O Pracowni
         </a>
       </li>
-      {% endif %} {% if page.url != "/oferta.html" %}
+      {% endif %} {% if page.url != "/oferta/" %}
       <li>
-        <a href="oferta.html">
+        <a href="{{ site.baseurl }}/oferta/">
           Oferta
         </a>
       </li>
-      {% endif %} {% if page.url != "/kontakt.html" %}
+      {% endif %} {% if page.url != "/kontakt/" %}
       <li>
-        <a href="kontakt.html">
+        <a href="{{ site.baseurl }}/kontakt/">
           Kontakt
         </a>
       </li>
