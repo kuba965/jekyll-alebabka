@@ -15,14 +15,17 @@
       padding: 35px 20px;
     }
     .nav-logo {
-      height: 50px;
+      height: 120px;
       @media screen and (max-width: 600px) {
-        height: 30px;
+        height: 60px;
       }
       img {
         height: 100%;
         width: auto;
       }
+    }
+    .logo-small {
+      height: 50px;
     }
     .navigation {
       display: flex;

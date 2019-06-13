@@ -2,15 +2,41 @@
 layout: default
 ---
 
-<header class="header-blog">
+{% for post in site.posts offset: 0 limit: 1 %}
+<header
+  class="header-blog"
+  style="background-image:url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{
+    post.featImg
+  }}')"
+>
   <div class="overlay-light"></div>
   {% include nav.html %}
   <div class="home-title">
     <h1 class="animated slideInRight">
-      Blog AleBabka!
+      {{ post.title }}
     </h1>
-    <h4>
-      Dowiedz się więcej
-    </h4>
+    <a class="readMore" href="{{ site.baseurl }}{{ post.url }}"
+      >Przeczytaj więcej</a
+    >
   </div>
 </header>
+{% endfor %}
+<div class="container blogContainer">
+  {% for post in site.posts %}
+  <div class="blogPostContainer">
+    <a
+      href="{{ site.baseurl }}{{ post.url }}"
+      class="blogPostFeatImg"
+      style="background-image: url('{{ site.baseurl }}{{
+        site.pathToBlogImgBin
+      }}{{ post.featImg }}');"
+    ></a>
+    <a href="" class="blogCategory">{{ post.categories }}</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="blogTitle">{{
+      post.title
+    }}</a>
+    <p class="blogExcerpt">{{ post.excerpt }}</p>
+  </div>
+  {% endfor %}
+</div>
+<hr />

@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Pracownia Cukiernicza AleBabka! Magdalena Wiśniewska-Chołody Wypieki Słodkości Słodycze Bartoszyce Cukiernia Kawiarnia Połęcze Ciasto Ciasta Torty Tort Babeczki Babeczka Słodki Stół
 baseurl: "/jekyll-alebabka" # the subpath of your site, e.g. /blog
 url: "https://kuba965.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-
+pathToBlogImgBin: /assets/img/blog/
 # Build settings
 permalink: pretty
 markdown: kramdown
