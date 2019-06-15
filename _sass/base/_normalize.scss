@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  transition: all 0.3s ease-in;
 }
 
 body {
@@ -33,7 +32,7 @@ a {
   color: black;
 }
 a:hover {
-  color: lightgray;
+  color: darkgray;
 }
 .hide {
   display: none;

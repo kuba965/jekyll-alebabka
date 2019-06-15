@@ -31,4 +31,22 @@ layout: default
 </div>
 <hr />
 <h4 class="readMore">Przeczytaj też...</h4>
-<div class="blogPostMore"></div>
+<div class="blogPostMoreContainer">
+  {% for post in site.posts limit: 3%}
+  <div class="blogPostMore">
+    <a
+      href="{{ site.baseurl }}{{ post.url }}"
+      class="blogPostFeatImg"
+      style="background-image: url('{{ site.baseurl }}{{
+        site.pathToBlogImgBin
+      }}{{ post.featImg }}');"
+    ></a>
+    <a class="blogCategory">{{ post.categories }}</a>
+    <a href="{{ site.baseurl }}{{ post.url }}" class="blogTitle">{{
+      post.title
+    }}</a>
+    <p class="blogExcerpt">{{ post.excerpt }}</p>
+  </div>
+  {% endfor %}
+</div>
+<hr />

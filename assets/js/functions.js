@@ -25,36 +25,70 @@ window.addEventListener("scroll", function(e) {
     navbar.classList.add("active");
     navbar.classList.add("animated", "slideInDown");
     navStripe.classList.add("visible");
-    navStripe.classList.add("animated", "slideInLeft");
+    //navStripe.classList.add("animated", "slideInLeft");
     lace.classList.add("visible");
-    lace.classList.add("animated", "slideInRight");
+    //lace.classList.add("animated", "slideInRight");
     logo.src = "/jekyll-alebabka/assets/img/logo_white.png";
-    logoContainer.classList.add("animated", "slideInDown");
+    //logoContainer.classList.add("animated", "slideInDown");
     logoContainer.classList.add("logo-small");
   } else if (navbar.classList.contains("active")) {
     navbar.classList.remove("active");
     navbar.classList.remove("animated", "slideInDown");
     navStripe.classList.remove("visible");
-    navStripe.classList.remove("animated", "slideInLeft");
+    //navStripe.classList.remove("animated", "slideInLeft");
     lace.classList.remove("visible");
-    lace.classList.remove("animated", "slideInRight");
+    //lace.classList.remove("animated", "slideInRight");
     logo.src = "/jekyll-alebabka/assets/img/logo_frame.png";
-    logoContainer.classList.remove("animated", "slideInDown");
+    //logoContainer.classList.remove("animated", "slideInDown");
     logoContainer.classList.remove("logo-small");
   } else {
     navbar.classList.remove("active");
     navbar.classList.remove("animated", "slideInDown");
     navStripe.classList.remove("visible");
-    navStripe.classList.remove("animated", "slideInLeft");
+    //navStripe.classList.remove("animated", "slideInLeft");
     lace.classList.remove("visible");
-    lace.classList.remove("animated", "slideInRight");
+    //lace.classList.remove("animated", "slideInRight");
     logo.src = "/jekyll-alebabka/assets/img/logo_frame.png";
-    logoContainer.classList.remove("animated", "slideInDown");
+    //logoContainer.classList.remove("animated", "slideInDown");
     logoContainer.classList.remove("logo-small");
   }
 });
-//End Nav
 
+//End Nav
+//Responsive-Nav
+const menu = document.querySelector(".sidebar-menu");
+const menuBtn = document.querySelector(".menu-btn");
+let showMenu = false;
+
+menuBtn.addEventListener("click", toggleMenu);
+function toggleMenu() {
+  if (!showMenu) {
+    menuBtn.classList.add("close");
+    menu.classList.remove("hidden");
+    menu.classList.add("show");
+    menu.classList.remove("fadeOutLeft");
+    //menu.classList.remove("animated", "slideOutLeft");
+    menu.classList.add("animated", "slideInLeft");
+    //navItems.forEach(item => item.classList.add("show"));
+
+    //Set Menu State
+    showMenu = true;
+  } else {
+    menuBtn.classList.remove("close");
+    menu.classList.remove("show");
+    menu.classList.remove("animated", "slideInLeft");
+    //menu.classList.add("animated", "slideOutLeft");
+    menu.classList.add("fadeOutLeft");
+    setTimeout(function() {
+      menu.classList.add("hidden");
+    }, 500);
+    //navItems.forEach(item => item.classList.remove("show"));
+
+    //Set Menu State
+    showMenu = false;
+  }
+}
+//End Responsive-Nav
 //Offer Opis
 $(function() {
   $(".scroll-down").click(function() {

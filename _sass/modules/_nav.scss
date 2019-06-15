@@ -1,11 +1,88 @@
 //Navigation
+.sidebar-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: $primary-color;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+
+    .sidebar-logo {
+      align-self: left;
+      height: 120px;
+      @media screen and (max-width: 600px) {
+        height: 60px;
+      }
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+    .social-link {
+      display: flex;
+      a {
+        font-size: 1.5em;
+        color: $second-color;
+        transition: all ease-in 0.3s;
+        padding: 10px;
+        &:hover {
+          color: darken($second-color, 25%);
+        }
+      }
+    }
+    .link {
+      width: 100%;
+      font-weight: 700;
+      color: $second-color;
+      transition: all ease-in 0.3s;
+      &:hover {
+        color: darken($second-color, 25%);
+      }
+      //border-bottom: 2px solid $second-color;
+    }
+  }
+}
+.show {
+  visibility: visible;
+}
+.hidden {
+  visibility: hidden;
+}
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
 .nav-wrap {
   transition: all 0.3s ease-in;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 999;
+
   #nav-content {
     display: flex;
     justify-content: space-between;
@@ -27,12 +104,76 @@
     .logo-small {
       height: 50px;
     }
+    .responsive-menu {
+      position: relative;
+      display: none;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      z-index: 99999;
+      cursor: pointer;
+      @media screen and (max-width: 1000px) {
+        display: flex !important;
+      }
+      .text-menu {
+        position: relative;
+        margin-right: 0.3em;
+        z-index: 99999;
+        margin-bottom: 5px;
+        color: $second-color;
+        font-size: 1.5em;
+        text-transform: uppercase;
+      }
+      .menu-btn {
+        position: relative;
+        z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 4rem;
+        transition: all 0.5s ease-out;
+        .btn-line {
+          width: 30px;
+          height: 3px;
+          margin: 0 0 5px 0;
+          background: $second-color;
+          transition: all 0.5s ease-out;
+        }
+
+        //Rotate Into X With Menu Lines
+        &.close {
+          transform: rotate(180deg);
+
+          .btn-line {
+            //Line 1 - Rotate
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(5px, 5px);
+            }
+            // Line 2 - Hide
+            &:nth-child(2) {
+              opacity: 0;
+            }
+            //Line 3 - Rotate
+            &:nth-child(3) {
+              transform: rotate(135deg) translate(-6px, 6px);
+            }
+          }
+        }
+      }
+    }
+
     .navigation {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center;
-
+      @media screen and (max-width: 1000px) {
+        display: none !important;
+      }
+      ul {
+        padding-right: 0;
+        margin-right: 0;
+      }
       li {
         display: block;
         padding-right: 20px;
@@ -51,6 +192,7 @@
       }
       li:last-of-type {
         padding-right: 0;
+        margin-right: 0;
       }
     }
   }

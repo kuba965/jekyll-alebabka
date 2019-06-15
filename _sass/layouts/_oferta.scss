@@ -1,39 +1,8 @@
 .header-offer {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 500px;
   background: url("../img/offer.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  .overlay-light {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba($primary-color, 0.6);
-  }
-  .home-title {
-    h1 {
-      color: $second-color;
-      font-weight: 900;
-    }
-    h4 {
-      color: $second-color;
-    }
-    z-index: 3;
-    @media only screen and (max-width: 640px) {
-      padding: 0;
-      text-align: center;
-    }
-  }
 }
 .offer-description {
   text-align: center;
@@ -114,7 +83,7 @@
     background: lighten($primary-color, 40%);
     border-radius: 15px;
     padding: 15px;
-    box-shadow: -15px 10px 30px -8px #cfa9df;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
   }
   h5 {
     margin-bottom: 20px;

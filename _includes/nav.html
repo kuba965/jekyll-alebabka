@@ -1,4 +1,32 @@
 <!-- Navigation -->
+<div class="sidebar-menu hidden">
+  <div class="sidebar-content">
+    <a href="" class="sidebar-logo"
+      ><img class="img-fluid" src="{{ site.baseurl }}/assets/img/logo_frame.png"
+    /></a>
+    <a href="" class="link">Strona Główna</a>
+    <a href="" class="link">O Pracowni</a>
+    <a href="" class="link">Oferta</a>
+    <a href="" class="link">Blog</a>
+    <a href="" class="link">Kontakt</a>
+    <div class="social-link">
+      <a
+        href="https://www.facebook.com/alebabkapracowniacukierniczabartoszycetortyciasta/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-facebook-f"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/AleBabkaPracowniaCukiernicza/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fab fa-instagram"></i
+      ></a>
+    </div>
+  </div>
+</div>
 <nav class="nav-wrap" id="nav">
   <div class="container-fluid" id="nav-stripe"></div>
   <div class="container" id="nav-content">
@@ -8,6 +36,15 @@
         id="logo-image"
         src="{{ site.baseurl }}/assets/img/logo_frame.png"
     /></a>
+    <div class="responsive-menu">
+      <div class="text-menu">Menu</div>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+    </div>
+
     <ul class="navigation">
       {% if page.url != "/" %}
       <li>
@@ -25,6 +62,12 @@
       <li>
         <a href="{{ site.baseurl }}/oferta/">
           Oferta
+        </a>
+      </li>
+      {% endif %} {% if page.url != "/blog/" %}
+      <li>
+        <a href="{{ site.baseurl }}/blog/">
+          Blog
         </a>
       </li>
       {% endif %} {% if page.url != "/kontakt/" %}
