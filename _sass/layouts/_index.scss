@@ -6,10 +6,6 @@
   background-repeat: no-repeat;
   .home-title {
     padding-left: 350px;
-    @media only screen and (max-width: 640px) {
-      padding: 0;
-      text-align: center;
-    }
   }
 }
 
@@ -17,18 +13,31 @@
 #content {
   padding-top: 6em;
   padding-bottom: 3em;
-}
-.about {
-  text-align: center;
   h2 {
     margin-bottom: 30px;
+    text-align: center;
+    @media only screen and (max-width: 760px) {
+      font-size: 1.7em;
+    }
   }
   p {
-    text-align: center;
+    text-align: justify;
+    letter-spacing: 0.6px;
+    line-height: 1.6em;
+    @media only screen and (max-width: 760px) {
+      font-size: 0.9em;
+      font-weight: 500;
+    }
   }
   button {
     margin-top: 30px;
   }
+}
+.p-align-center {
+  text-align: center !important;
+}
+.about {
+  text-align: center;
   .about-photo {
     align-self: center;
     max-height: 300px;
@@ -51,18 +60,65 @@
     background: $primary-color;
     color: $second-color;
     padding-bottom: 30px;
+    position: relative;
     h2 {
-      margin: 0 0 30px 0;
+      @media only screen and (max-width: 760px) {
+        margin-bottom: 20px !important;
+      }
     }
-
     img {
       height: 150px;
       padding: 20px;
+
+      @media only screen and (max-width: 760px) {
+        height: 80px;
+        position: absolute;
+      }
+    }
+    #cookie {
+      @media only screen and (max-width: 760px) {
+        right: 0;
+        margin-top: -10px;
+      }
+    }
+    #cake {
+      display: none;
+      @media only screen and (max-width: 760px) {
+        display: block;
+        left: 0;
+        margin-top: -10px;
+      }
+    }
+    #cake-lg {
+      display: block;
+      @media only screen and (max-width: 760px) {
+        display: none;
+      }
     }
   }
   button {
     width: 50%;
     font-size: 30px;
+    @media only screen and (max-width: 760px) {
+      font-size: 1.2em;
+    }
+  }
+}
+.blog {
+  .blog-info {
+    margin-bottom: 30px;
+  }
+  #blog-lg {
+    display: flex;
+    @media only screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+  #blog-mobile {
+    display: none;
+    @media only screen and (max-width: 1200px) {
+      display: block;
+    }
   }
 }
 .main-map {
@@ -87,22 +143,21 @@
     margin-bottom: 30px;
   }
   .row {
-    background: lighten($primary-color, 40%);
     margin-bottom: 15px;
     button {
       border: none;
+      margin-bottom: 15px;
     }
-    .icon {
-      i {
-        font-size: 4em;
-        color: $primary-color;
-        padding-bottom: 10px;
-      }
-      p {
-        font-size: 13px;
-        font-weight: 900;
-        margin: 0;
-      }
+    i {
+      font-size: 4em;
+      color: $primary-color;
+      padding-bottom: 10px;
+    }
+    .icon-description {
+      font-size: 13px;
+      text-align: center !important;
+      font-weight: 700 !important;
+      margin: 0;
     }
     .icon:hover {
       background: $primary-color;
@@ -121,4 +176,8 @@
 .divider {
   margin-top: 120px;
   margin-bottom: 120px;
+  @media only screen and (max-width: 760px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }

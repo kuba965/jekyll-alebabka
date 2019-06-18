@@ -21,15 +21,21 @@
     background: $primary-color;
     h1 {
       color: white;
+      @media only screen and (max-width: 700px) {
+        font-size: 1.5em;
+      }
     }
     img {
       max-height: 100px;
+      @media only screen and (max-width: 700px) {
+        height: 50px;
+      }
     }
   }
   .offer-text {
-    background: url("../img/offer1.png");
+    background: url("../img/offer1.jpg");
     background-size: cover;
-    background-position: center center;
+    background-position: left top;
     background-repeat: no-repeat;
     padding: 50px;
     border-radius: 0 0 15px 15px;
@@ -41,7 +47,7 @@
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba($second-color, 0.7);
+      background: rgba($second-color, 0.8);
       border-radius: 0 0 15px 15px;
     }
     .offer-about {
@@ -50,18 +56,26 @@
       p {
         font-weight: 600;
         margin-bottom: 20px;
-        letter-spacing: 1.5px;
+        text-align: left !important;
       }
       h5 {
-        font-weight: 700;
+        font-weight: 600;
         margin-bottom: 20px;
+        text-align: right !important;
+        @media only screen and (max-width: 700px) {
+          font-size: 1.1em;
+        }
       }
       h3 {
         color: $primary-color;
+        @media only screen and (max-width: 700px) {
+          font-size: 1.4em;
+        }
       }
       a {
         font-size: 2em;
         color: $primary-color;
+        transition: all ease-in 0.3s;
       }
       a:hover {
         color: rgba($primary-color, 0.6);
@@ -76,25 +90,42 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin: 100px auto;
   text-align: center;
+
   .offer-card {
     background: lighten($primary-color, 40%);
-    border-radius: 15px;
-    padding: 15px;
+    border-radius: 5px;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+    @media only screen and (max-width: 1000px) {
+      border-radius: 0;
+      margin-bottom: 30px;
+      background: transparent;
+      box-shadow: none;
+      padding: 0;
+      margin: 0px 10px 30px 10px;
+    }
   }
   h5 {
     margin-bottom: 20px;
+    @media only screen and (max-width: 700px) {
+      font-size: 1.1em;
+    }
   }
   .text-description {
     margin-top: 10px;
     font-weight: 600;
     font-size: 1em;
+    color: rgba(0, 0, 0, 0.8);
+    @media only screen and (max-width: 700px) {
+      font-size: 0.9em;
+    }
   }
   p {
     margin-bottom: 10px;
+    @media only screen and (max-width: 700px) {
+      font-size: 0.8em;
+    }
   }
   .slodki {
     .offer-card {
@@ -102,7 +133,7 @@
         margin-bottom: 30px !important;
       }
       .slodki-images {
-        margin: 20px 0 20px 0;
+        margin: 20px 0;
         padding: 0;
         display: flex;
         justify-content: space-around;
@@ -114,52 +145,76 @@
           height: 200px;
           border-radius: 15px;
           border: 2px solid $primary-color;
-          @media only screen and (max-width: 1200px) {
-            height: 150px;
+          @media only screen and (max-width: 1000px) {
+            width: 100%;
+            &:first-of-type {
+              display: none;
+            }
           }
         }
       }
     }
   }
   .row {
-    padding: 0px 15px 0px 15px;
+    margin: 0;
+    padding: 0;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
   }
   .opis {
     margin-top: 30px;
-    border-width: 3px;
+    border-width: 2px;
     border-color: $primary-color;
     border-style: solid;
     background: $second-color;
-
+    margin-left: 0;
+    padding-left: 0;
+    .smaki {
+      margin-left: -15px;
+    }
     .nazwa-opis {
       color: $primary-color;
       font-size: 1.1em;
-      font-weight: 800;
+      font-weight: 700;
+      @media only screen and (max-width: 700px) {
+        font-size: 1.05em;
+      }
     }
     h3 {
-      background: $primary-color;
-      border-radius: 15px;
-      color: $second-color;
       margin-top: -20px;
+      @media only screen and (max-width: 700px) {
+        font-size: 1.4em;
+      }
+      span {
+        background: $primary-color;
+        border-radius: 15px;
+        color: $second-color;
+        padding: 0px 20px;
+      }
     }
     ul {
       display: flex;
       flex-direction: column;
       margin: 0;
-      padding: 0;
       list-style: none;
       text-align: left;
     }
     li {
       width: 100%;
+      margin: 4px 5px 4px 0px !important;
       font-weight: 600;
-
-      margin: 2px 2px 2px 0;
+      letter-spacing: 0.7px;
+      word-spacing: 2.5px;
+      color: rgba(0, 0, 0, 0.6);
+      @media only screen and (max-width: 700px) {
+        font-size: 0.9em;
+      }
     }
     li::before {
       content: "•";
       color: $primary-color;
-      margin-right: 5px;
     }
   }
 }

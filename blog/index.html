@@ -43,7 +43,7 @@ title: My Blog
 <div class="container">
     <div class="row blog-description">
       <div class="col-md-7 blog-about">
-          <h3>Wtam słodko na moim blogu!</h3>
+          <h3>Witam słodko na moim blogu!</h3>
           <p>Znajdziecie tu informacje o naszej pracowni, o mnie oraz przepisy na ciasta i wiele innych.
           Blog dzieli się na trzy podstawowe kategorie: </p>
             <ul>
@@ -70,9 +70,7 @@ title: My Blog
         <a class="blogCategory"><span>{{ post.categories }}</span></a>
         <a href="{{ site.baseurl }}{{ post.url }}" class="blogTitle">{{ post.title }}</a>
         <p class="blogExcerpt">{{ post.excerpt }}</p>
-        <a class="readMore" href="{{ site.baseurl }}{{ post.url }}"
-      >Przeczytaj więcej</a
-    >
+    <button class="btn btn-outline-secondary" href="{{ site.baseurl }}{{ post.url }}"  type="button">Przeczytaj więcej</button>
         </div>
         <div class="col-md-6 blogPostFeatImg" onclick="location.href='{{ site.baseurl }}{{ post.url }}';" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></div>
       </div>

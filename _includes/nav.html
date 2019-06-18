@@ -1,14 +1,20 @@
 <!-- Navigation -->
 <div class="sidebar-menu hidden">
   <div class="sidebar-content">
-    <a href="" class="sidebar-logo"
+    <!-- <a class="sidebar-exit"><i class="fas fa-times"></i></a> -->
+    <div class="sidebar-btn">
+      <div class="btn-x"></div>
+      <div class="btn-x"></div>
+      <div class="btn-x"></div>
+    </div>
+    <a href="{{ site.baseurl }}/" class="sidebar-logo"
       ><img class="img-fluid" src="{{ site.baseurl }}/assets/img/logo_frame.png"
     /></a>
-    <a href="" class="link">Strona Główna</a>
-    <a href="" class="link">O Pracowni</a>
-    <a href="" class="link">Oferta</a>
-    <a href="" class="link">Blog</a>
-    <a href="" class="link">Kontakt</a>
+    <a href="{{ site.baseurl }}/" class="link">Strona Główna</a>
+    <a href="{{ site.baseurl }}/pracownia/" class="link">O Pracowni</a>
+    <a href="{{ site.baseurl }}/oferta/" class="link">Oferta</a>
+    <a href="{{ site.baseurl }}/blog/" class="link">Blog</a>
+    <a href="{{ site.baseurl }}/kontakt/" class="link">Kontakt</a>
     <div class="social-link">
       <a
         href="https://www.facebook.com/alebabkapracowniacukierniczabartoszycetortyciasta/"
@@ -30,7 +36,7 @@
 <nav class="nav-wrap" id="nav">
   <div class="container-fluid" id="nav-stripe"></div>
   <div class="container" id="nav-content">
-    <a href="index.html" class="nav-logo"
+    <a href="{{ site.baseurl }}/" class="nav-logo"
       ><img
         class="img-fluid"
         id="logo-image"
@@ -46,37 +52,31 @@
     </div>
 
     <ul class="navigation">
-      {% if page.url != "/" %}
       <li>
         <a href="{{ site.baseurl }}/">
           Strona Główna
         </a>
       </li>
-      {% endif %} {% if page.url != "/pracownia/" %}
       <li>
         <a href="{{ site.baseurl }}/pracownia/">
           O Pracowni
         </a>
       </li>
-      {% endif %} {% if page.url != "/oferta/" %}
       <li>
         <a href="{{ site.baseurl }}/oferta/">
           Oferta
         </a>
       </li>
-      {% endif %} {% if page.url != "/blog/" %}
       <li>
         <a href="{{ site.baseurl }}/blog/">
           Blog
         </a>
       </li>
-      {% endif %} {% if page.url != "/kontakt/" %}
       <li>
         <a href="{{ site.baseurl }}/kontakt/">
           Kontakt
         </a>
       </li>
-      {% endif %}
     </ul>
   </div>
   <div class="lace"></div>

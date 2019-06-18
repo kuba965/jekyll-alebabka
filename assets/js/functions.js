@@ -58,14 +58,16 @@ window.addEventListener("scroll", function(e) {
 //Responsive-Nav
 const menu = document.querySelector(".sidebar-menu");
 const menuBtn = document.querySelector(".menu-btn");
+const sidebarExit = document.querySelector(".sidebar-btn");
 let showMenu = false;
 
-menuBtn.addEventListener("click", toggleMenu);
-function toggleMenu() {
+menuBtn.addEventListener("click", toggleMenuIn);
+sidebarExit.addEventListener("click", toggleMenuOut);
+function toggleMenuIn() {
   if (!showMenu) {
     menuBtn.classList.add("close");
     menu.classList.remove("hidden");
-    menu.classList.add("show");
+    menu.classList.add("visible");
     menu.classList.remove("fadeOutLeft");
     //menu.classList.remove("animated", "slideOutLeft");
     menu.classList.add("animated", "slideInLeft");
@@ -75,7 +77,7 @@ function toggleMenu() {
     showMenu = true;
   } else {
     menuBtn.classList.remove("close");
-    menu.classList.remove("show");
+    menu.classList.remove("visible");
     menu.classList.remove("animated", "slideInLeft");
     //menu.classList.add("animated", "slideOutLeft");
     menu.classList.add("fadeOutLeft");
@@ -87,6 +89,20 @@ function toggleMenu() {
     //Set Menu State
     showMenu = false;
   }
+}
+function toggleMenuOut() {
+  menuBtn.classList.remove("close");
+  menu.classList.remove("visible");
+  menu.classList.remove("animated", "slideInLeft");
+  //menu.classList.add("animated", "slideOutLeft");
+  menu.classList.add("fadeOutLeft");
+  setTimeout(function() {
+    menu.classList.add("hidden");
+  }, 500);
+  //navItems.forEach(item => item.classList.remove("show"));
+
+  //Set Menu State
+  showMenu = false;
 }
 //End Responsive-Nav
 //Offer Opis

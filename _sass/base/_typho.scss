@@ -10,6 +10,13 @@ h5 {
 }
 p {
   font-family: "Roboto Slab", serif;
+  text-align: justify;
+  letter-spacing: 0.6px;
+  line-height: 1.6em;
+  @media only screen and (max-width: 760px) {
+    font-size: 0.9em;
+    font-weight: 500;
+  }
 }
 a {
   font-family: "Roboto Slab", serif;
@@ -21,3 +28,10 @@ a:hover {
 
 $first-font: "Berkshire Swash", cursive;
 $second-font: "Roboto Slab", serif;
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  @media only screen and (max-width: 760px) {
+    font-size: 1.7em;
+  }
+}

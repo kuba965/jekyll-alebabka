@@ -4,50 +4,69 @@
   .btn-gallery {
     background: transparent;
     border: 0;
+
     h1 {
       background: $primary-color;
       color: $second-color;
       border-radius: 15px;
       position: absolute;
       padding: 5px;
-      font-size: 2em;
+      font-size: 1.8em;
+      transition: all ease 0.3s;
+      @media only screen and (max-width: 700px) {
+        font-size: 1.6em;
+        &:hover {
+          font-size: 1.8em;
+          padding: 5px;
+          background: $fourth-color;
+          color: $primary-color;
+        }
+      }
+      &:hover {
+        font-size: 2em;
+        padding: 10px;
+        background: $fourth-color;
+        color: $primary-color;
+      }
+    }
+    &:hover {
+      animation-duration: 4s;
     }
   }
-  .btn-gallery:hover {
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-  }
-  .btn-gallery::after {
-    display: block;
-    position: relative;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0,
-      $fourth-color 100%
-    );
-    margin-top: -500px;
-    height: 500px;
-    @media only screen and (max-width: 1000px) {
-      margin-top: -200px;
-      height: 200px;
-    }
-    width: 100%;
-    content: "";
-  }
+  // .btn-gallery::after {
+  //   display: block;
+  //   position: relative;
+  //   background-image: linear-gradient(
+  //     to bottom,
+  //     rgba(255, 255, 255, 0) 0,
+  //     $fourth-color 100%
+  //   );
+  //   margin-top: -500px;
+  //   height: 500px;
+  //   @media only screen and (max-width: 1000px) {
+  //     margin-top: -200px;
+  //     height: 200px;
+  //   }
+  //   width: 100%;
+  //   content: "";
+  // }
   .photos {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    align-content: space-evenly;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
     width: 100%;
+    transition: all ease 0.4s;
+    &:hover {
+      opacity: 0.6;
+    }
     img {
       height: 200px;
       border-radius: 15px;
       border: 2px solid $primary-color;
       @media only screen and (max-width: 767px) {
-        height: 150px;
+        height: 100px;
       }
     }
   }
