@@ -1,11 +1,12 @@
 .header-about {
-  background: url("../img/pracownia.jpg");
+  background: url("../img/pracownia.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 .about-content {
   margin-top: 100px;
+  overflow: hidden;
   .text {
     text-align: center;
     h2 {

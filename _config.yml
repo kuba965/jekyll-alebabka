@@ -17,8 +17,8 @@ title: Pracownia Cukiernicza AleBabka!
 email: kontakt@alebabka.com
 description: >- # this means to ignore newlines until "baseurl:"
   Pracownia Cukiernicza AleBabka! Magdalena Wiśniewska-Chołody Wypieki Słodkości Słodycze Bartoszyce Cukiernia Kawiarnia Połęcze Ciasto Ciasta Torty Tort Babeczki Babeczka Słodki Stół
-baseurl: "/jekyll-alebabka" # the subpath of your site, e.g. /blog
-url: "https://kuba965.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "alebabka.com" # the base hostname & protocol for your site, e.g. http://example.com
 pathToBlogImgBin: /assets/img/blog/
 # Build settings
 permalink: pretty
@@ -27,6 +27,14 @@ plugins:
   - jekyll-feed
   - jekyll-autoprefixer
   - jekyll-paginate
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 paginate: 5
 paginate_path: "/blog/page:num"

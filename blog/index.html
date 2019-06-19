@@ -70,7 +70,7 @@ title: My Blog
         <a class="blogCategory"><span>{{ post.categories }}</span></a>
         <a href="{{ site.baseurl }}{{ post.url }}" class="blogTitle">{{ post.title }}</a>
         <p class="blogExcerpt">{{ post.excerpt }}</p>
-    <button class="btn btn-outline-secondary" href="{{ site.baseurl }}{{ post.url }}"  type="button">Przeczytaj więcej</button>
+        <button class="btn btn-outline-secondary"   type="button" onclick="location.href='{{ site.baseurl }}{{ post.url }}'">Przeczytaj więcej</button>
         </div>
         <div class="col-md-6 blogPostFeatImg" onclick="location.href='{{ site.baseurl }}{{ post.url }}';" style="background-image: url('{{ site.baseurl }}{{ site.pathToBlogImgBin }}{{ post.featImg }}');"></div>
       </div>

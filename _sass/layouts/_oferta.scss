@@ -1,5 +1,5 @@
 .header-offer {
-  background: url("../img/offer.jpg");
+  background: url("../img/oferta.webp");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -165,9 +165,10 @@
   }
   .opis {
     margin-top: 30px;
-    border-width: 2px;
+    border-width: 1.5px;
     border-color: $primary-color;
     border-style: solid;
+    border-radius: 10px;
     background: $second-color;
     margin-left: 0;
     padding-left: 0;

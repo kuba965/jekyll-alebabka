@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash|Lato&display=swap");
 h1,
 h2,
 h3 {
@@ -6,11 +6,10 @@ h3 {
 }
 h4,
 h5 {
-  font-family: "Roboto Slab", serif;
+  font-family: "Lato", sans-serif;
 }
 p {
-  font-family: "Roboto Slab", serif;
-  text-align: justify;
+  font-family: "Lato", sans-serif;
   letter-spacing: 0.6px;
   line-height: 1.6em;
   @media only screen and (max-width: 760px) {
@@ -19,7 +18,8 @@ p {
   }
 }
 a {
-  font-family: "Roboto Slab", serif;
+  font-family: "Lato", sans-serif;
+
   text-decoration: none;
 }
 a:hover {
@@ -27,7 +27,7 @@ a:hover {
 }
 
 $first-font: "Berkshire Swash", cursive;
-$second-font: "Roboto Slab", serif;
+$second-font: "Lato", sans-serif;
 h2 {
   margin-bottom: 30px;
   text-align: center;

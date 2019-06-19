@@ -1,5 +1,5 @@
 .header-contact {
-  background: url("../img/contact.jpg");
+  background: url("../img/kontakt.webp");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
   flex-wrap: wrap;
 
   .contact-description {
-    padding: 55px 0px;
+    padding: 55px 0px 55px 20px;
     @media only screen and (max-width: 1000px) {
       padding: 0;
       border-radius: 0;

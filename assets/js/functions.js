@@ -140,48 +140,68 @@ $("#btn-torty").on("click", function() {
     dynamic: true,
     dynamicEl: [
       {
-        src: "../assets/img/torty/2.jpg",
-        thumb: "../assets/img/torty/2.jpg"
+        src: "../assets/img/torty/torty-1.jpg",
+        thumb: "../assets/img/torty/torty-1.jpg"
       },
       {
-        src: "../assets/img/torty/3.jpg",
-        thumb: "../assets/img/torty/3.jpg"
+        src: "../assets/img/torty/torty-2.jpg",
+        thumb: "../assets/img/torty/torty-2.jpg"
       },
       {
-        src: "../assets/img/torty/4.jpg",
-        thumb: "../assets/img/torty/4.jpg"
+        src: "../assets/img/torty/torty-3.jpg",
+        thumb: "../assets/img/torty/torty-3.jpg"
       },
       {
-        src: "../assets/img/torty/5.jpg",
-        thumb: "../assets/img/torty/5.jpg"
+        src: "../assets/img/torty/torty-4.jpg",
+        thumb: "../assets/img/torty/torty-4.jpg"
       },
       {
-        src: "../assets/img/torty/6.jpg",
-        thumb: "../assets/img/torty/6.jpg"
+        src: "../assets/img/torty/torty-5.jpg",
+        thumb: "../assets/img/torty/torty-5.jpg"
       },
       {
-        src: "../assets/img/torty/8.jpg",
-        thumb: "../assets/img/torty/8.jpg"
+        src: "../assets/img/torty/torty-6.jpg",
+        thumb: "../assets/img/torty/torty-6.jpg"
       },
       {
-        src: "../assets/img/torty/9.jpg",
-        thumb: "../assets/img/torty/9.jpg"
+        src: "../assets/img/torty/torty-8.jpg",
+        thumb: "../assets/img/torty/torty-8.jpg"
       },
       {
-        src: "../assets/img/torty/10.jpg",
-        thumb: "../assets/img/torty/10.jpg"
+        src: "../assets/img/torty/torty-9.jpg",
+        thumb: "../assets/img/torty/torty-9.jpg"
       },
       {
-        src: "../assets/img/torty/11.jpg",
-        thumb: "../assets/img/torty/11.jpg"
+        src: "../assets/img/torty/torty-10.jpg",
+        thumb: "../assets/img/torty/torty-10.jpg"
       },
       {
-        src: "../assets/img/torty/12.jpg",
-        thumb: "../assets/img/torty/12.jpg"
+        src: "../assets/img/torty/torty-11.jpg",
+        thumb: "../assets/img/torty/torty-11.jpg"
       },
       {
-        src: "../assets/img/torty/13.jpg",
-        thumb: "../assets/img/torty/13.jpg"
+        src: "../assets/img/torty/torty-12.jpg",
+        thumb: "../assets/img/torty/torty-12.jpg"
+      },
+      {
+        src: "../assets/img/torty/torty-13.jpg",
+        thumb: "../assets/img/torty/torty-13.jpg"
+      },
+      {
+        src: "../assets/img/torty/torty-14.jpg",
+        thumb: "../assets/img/torty/torty-14.jpg"
+      },
+      {
+        src: "../assets/img/torty/torty-15.jpg",
+        thumb: "../assets/img/torty/torty-15.jpg"
+      },
+      {
+        src: "../assets/img/torty/torty-16.jpg",
+        thumb: "../assets/img/torty/torty-16.jpg"
+      },
+      {
+        src: "../assets/img/torty/torty-17.jpg",
+        thumb: "../assets/img/torty/torty-17.jpg"
       }
     ]
   });
@@ -191,28 +211,28 @@ $("#btn-babeczki").on("click", function() {
     dynamic: true,
     dynamicEl: [
       {
-        src: "../assets/img/babeczki/1.jpg",
-        thumb: "../assets/img/babeczki/1.jpg"
+        src: "../assets/img/babeczki/babeczki-1.jpg",
+        thumb: "../assets/img/babeczki/babeczki-1.jpg"
       },
       {
-        src: "../assets/img/babeczki/2.jpg",
-        thumb: "../assets/img/babeczki/2.jpg"
+        src: "../assets/img/babeczki/babeczki-2.jpg",
+        thumb: "../assets/img/babeczki/babeczki-2.jpg"
       },
       {
-        src: "../assets/img/babeczki/3.jpg",
-        thumb: "../assets/img/babeczki/3.jpg"
+        src: "../assets/img/babeczki/babeczki-3.jpg",
+        thumb: "../assets/img/babeczki/babeczki-3.jpg"
       },
       {
-        src: "../assets/img/babeczki/4.jpg",
-        thumb: "../assets/img/babeczki/4.jpg"
+        src: "../assets/img/babeczki/babeczki-4.jpg",
+        thumb: "../assets/img/babeczki/babeczki-4.jpg"
       },
       {
-        src: "../assets/img/babeczki/5.jpg",
-        thumb: "../assets/img/babeczki/5.jpg"
+        src: "../assets/img/babeczki/babeczki-5.jpg",
+        thumb: "../assets/img/babeczki/babeczki-5.jpg"
       },
       {
-        src: "../assets/img/babeczki/6.jpg",
-        thumb: "../assets/img/babeczki/6.jpg"
+        src: "../assets/img/babeczki/babeczki-6.jpg",
+        thumb: "../assets/img/babeczki/babeczki-6.jpg"
       }
     ]
   });
@@ -222,40 +242,40 @@ $("#btn-ciasta").on("click", function() {
     dynamic: true,
     dynamicEl: [
       {
-        src: "../assets/img/ciasta/1.jpg",
-        thumb: "../assets/img/ciasta/1.jpg"
+        src: "../assets/img/ciasta/ciasta-1.jpg",
+        thumb: "../assets/img/ciasta/ciasta-1.jpg"
       },
       {
-        src: "../assets/img/ciasta/2.jpg",
-        thumb: "../assets/img/ciasta/2.jpg"
+        src: "../assets/img/ciasta/ciasta-2.jpg",
+        thumb: "../assets/img/ciasta/ciasta-2.jpg"
       },
       {
-        src: "../assets/img/ciasta/3.jpg",
-        thumb: "../assets/img/ciasta/3.jpg"
+        src: "../assets/img/ciasta/ciasta-3.jpg",
+        thumb: "../assets/img/ciasta/ciasta-3.jpg"
       },
       {
-        src: "../assets/img/ciasta/4.jpg",
-        thumb: "../assets/img/ciasta/4.jpg"
+        src: "../assets/img/ciasta/ciasta-4.jpg",
+        thumb: "../assets/img/ciasta/ciasta-4.jpg"
       },
       {
-        src: "../assets/img/ciasta/5.jpg",
-        thumb: "../assets/img/ciasta/5.jpg"
+        src: "../assets/img/ciasta/ciasta-5.jpg",
+        thumb: "../assets/img/ciasta/ciasta-5.jpg"
       },
       {
-        src: "../assets/img/ciasta/6.jpg",
-        thumb: "../assets/img/ciasta/6.jpg"
+        src: "../assets/img/ciasta/ciasta-6.jpg",
+        thumb: "../assets/img/ciasta/ciasta-6.jpg"
       },
       {
-        src: "../assets/img/ciasta/7.jpg",
-        thumb: "../assets/img/ciasta/7.jpg"
+        src: "../assets/img/ciasta/ciasta-7.jpg",
+        thumb: "../assets/img/ciasta/ciasta-7.jpg"
       },
       {
-        src: "../assets/img/ciasta/8.jpg",
-        thumb: "../assets/img/ciasta/8.jpg"
+        src: "../assets/img/ciasta/ciasta-8.jpg",
+        thumb: "../assets/img/ciasta/ciasta-8.jpg"
       },
       {
-        src: "../assets/img/ciasta/9.jpg",
-        thumb: "../assets/img/ciasta/9.jpg"
+        src: "../assets/img/ciasta/ciasta-9.jpg",
+        thumb: "../assets/img/ciasta/ciasta-9.jpg"
       }
     ]
   });

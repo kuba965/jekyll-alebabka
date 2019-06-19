@@ -62,7 +62,7 @@ layout: default
       <div class="col-md-6">
         <img
           class="img-fluid about-photo wow pulse"
-          src="assets/img/about.jpg"
+          src="assets/img/about.jpg" alt="o pracowni"
         />
       </div>
     </div>
@@ -72,8 +72,8 @@ layout: default
     <div class="offer-text wow slideInRight">
       <div class="row">
         <div class="col-md-3">
-          <img class="img-fluid" id="cookie" src="assets/img/cookie.png" />
-          <img class="img-fluid" id="cake" src="assets/img/cake.png" />
+          <img class="img-fluid" id="cookie" src="assets/img/cookie.png" alt="ikona ciasteczko"/>
+          <img class="img-fluid" id="cake" src="assets/img/cake.png"  alt="ikona tort"/>
         </div>
         <div class="col-md-6">
           <h2>Oferta</h2>
@@ -86,7 +86,7 @@ layout: default
           </p>
         </div>
         <div class="col-md-3">
-          <img class="img-fluid" id="cake-lg" src="assets/img/cake.png" />
+          <img class="img-fluid" id="cake-lg" src="assets/img/cake.png" alt="ikona tort" />
         </div>
       </div>
     </div>
@@ -97,13 +97,13 @@ layout: default
   <hr class="divider" />
   <div class="blog">
     <h2>Blog</h2>
+    <div class="blog-info">
+      <h5>
+        &emsp;Zapraszam na bloga pracowni, gdzie znajdziecie różne
+        <b>promocje</b>, <b>aktualności</b> oraz <b>przepisy</b>.
+      </h5>
+    </div>
     <div class="blogPostMoreContainer col-md-6" id="blog-lg">
-      <div class="blog-info">
-        <p>
-          &emsp;Zapraszam na bloga pracowni, gdzie znajdziecie różne
-          <b>promocje</b>, <b>aktualności</b> oraz <b>przepisy</b>.
-        </p>
-      </div>
       {% for post in site.posts limit: 3 %}
       <div class="blogPostMore">
         <a

@@ -2,36 +2,8 @@
   display: flex;
   align-items: center;
   .btn-gallery {
-    background: transparent;
+    background: none;
     border: 0;
-
-    h1 {
-      background: $primary-color;
-      color: $second-color;
-      border-radius: 15px;
-      position: absolute;
-      padding: 5px;
-      font-size: 1.8em;
-      transition: all ease 0.3s;
-      @media only screen and (max-width: 700px) {
-        font-size: 1.6em;
-        &:hover {
-          font-size: 1.8em;
-          padding: 5px;
-          background: $fourth-color;
-          color: $primary-color;
-        }
-      }
-      &:hover {
-        font-size: 2em;
-        padding: 10px;
-        background: $fourth-color;
-        color: $primary-color;
-      }
-    }
-    &:hover {
-      animation-duration: 4s;
-    }
   }
   // .btn-gallery::after {
   //   display: block;
@@ -57,9 +29,33 @@
     justify-content: center;
     height: 100%;
     width: 100%;
-    transition: all ease 0.4s;
+    transition: all ease 0.3s;
+    h1 {
+      background: $primary-color;
+      color: $second-color;
+      border-radius: 15px;
+      position: absolute;
+      padding: 5px;
+      font-size: 1.8em;
+      transition: all ease 0.3s;
+      @media only screen and (max-width: 700px) {
+        font-size: 1.6em;
+      }
+    }
     &:hover {
       opacity: 0.6;
+      h1 {
+        font-size: 2em;
+        padding: 10px;
+        background: $fourth-color;
+        color: $primary-color;
+        @media only screen and (max-width: 700px) {
+          font-size: 1.8em;
+          padding: 5px;
+          background: $fourth-color;
+          color: $primary-color;
+        }
+      }
     }
     img {
       height: 200px;
